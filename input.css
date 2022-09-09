@@ -1,0 +1,293 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-white-color: white;
+  --main-black-color: black;
+}
+
+body {
+  font-family: Proxima Nova, system-ui, sans-serif;
+}
+
+.side-bar {
+  background-color: #f4f4f4;
+}
+
+#showcase {
+  background-image: url('../img/showcase.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 800px;
+}
+
+#discover .slider-container {
+  max-width: 1000px;
+  padding: 2rem 3rem;
+  background: #e6e6e6;
+  margin: 2rem auto 0 auto;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+
+#discover img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+#discover .my-slider {
+  position: relative;
+}
+
+#discover .slider-item {
+  background: #fff;
+
+  padding: 1.5rem .75rem;
+  position: relative;
+}
+
+#discover .slider-item:hover {
+  cursor: pointer;
+}
+
+/* #discover .controls{
+  margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    background: #333;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+} */
+/* #discover .controls:focus {
+  outline: none;
+} */
+#discover #customize-controls {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#discover .prev,
+#discover .next {
+  position: absolute;
+
+
+  top: 50%;
+
+  z-index: 4;
+  color: rgb(231 229 228);
+
+}
+
+#discover .next {
+  right: 1%;
+
+}
+
+#discover .prev {
+  left: 1%;
+
+}
+
+#discover .image-container {
+  height: 75%;
+  width: 75%;
+  margin-top: 60PX;
+  opacity: 1;
+  z-index: 20;
+}
+
+#discover .image-box {
+  height: 95%;
+  width: 95%;
+  top: 20px;
+  visibility: hidden;
+}
+
+/* Facilities */
+
+#facilities {
+  height: 850px;
+  width: 100%;
+  background-image: url('../img/fac.jpeg');
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#facilities .facility-nav {
+  width: 93.5%;
+}
+
+#facilities .facility-container {
+  height: 550px;
+  width: 93.5%;
+  flex-direction: column;
+}
+
+#facilities .active {
+  color: rgb(15 118 110);
+}
+
+#facilities .facility-nav-icon {
+  font-weight: bold;
+}
+
+#rooms .room-details {
+  width: 80%;
+}
+
+#rooms .room-image {
+  width: 30%;
+}
+
+#tourism {
+  background-color: #f4f4f4;
+}
+
+#review {
+  height: 700px;
+  width: 100%;
+  background: url('../img/review.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.static {
+  position: static;
+}
+
+.owl-carousel .owl-slide {
+  position: relative;
+
+
+}
+
+.owl-carousel .owl-slide-animated {
+  transform: translateX(20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.05s;
+}
+
+.owl-carousel .owl-slide-animated.is-transitioned {
+  transform: none;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.owl-carousel .owl-slide-title.is-transitioned {
+  transition-delay: 0.2s;
+}
+
+.owl-carousel .owl-slide-subtitle.is-transitioned {
+  transition-delay: 0.35s;
+}
+
+.owl-carousel .owl-slide-cta.is-transitioned {
+  transition-delay: 0.5s;
+}
+
+.owl-carousel .owl-dots,
+.owl-carousel .owl-nav {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  background: transparent;
+  border: 1px solid var(--main-black-color);
+  transition: all 0.2s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover span,
+.owl-carousel .owl-dots .owl-dot.active span {
+  background: var(--main-black-color);
+}
+
+.owl-carousel .owl-nav {
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+#contact {
+  width: 100%;
+  height: 700px;
+  background-color: #f4f4f4;
+}
+
+@media(min-width:1024px) {
+
+  .nav-bar a {
+    font-size: 16px;
+  }
+
+  #facilities {
+    height: 750px;
+  }
+
+  #facilities .facility-nav {
+    width: 40%;
+  }
+
+  #rooms .room-details {
+    width: 100%;
+  }
+
+
+
+  #rooms .room-image {
+    width: 33.33%;
+  }
+
+  #facilities .facility-container {
+    height: 400px;
+    width: 90%;
+    flex-direction: row;
+  }
+}
+
+@media(max-width:800px) {
+  #rooms .room-details {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #rooms .room-image {
+    width: 90%;
+    flex-basis: 33%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  #rooms .room-image img {
+    width: 100%;
+    margin: auto;
+
+  }
+
+
+}
