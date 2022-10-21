@@ -1,484 +1,499 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" >
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
-    />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+<html lang="en" class="scroll-smooth">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css"
-      integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Villa</title>
-  </head>
-  <body class="text-lg subpixel-antialiased">
-    <!-- Navbar -->
-    <nav class="fixed top-0 z-10 w-full h-40 py-3 text-black bg-transparent nav-bar">
-      <div class="container flex items-center justify-around p-2 mx-auto">
-        <h2 class="text-5xl italic brand-logo text-cyan-800">Villa</h2>
-        <ul class="flex-row hidden space-x-10 md:flex">
-          <li>
-            <a
-              href="#" 
-              class="h-10 text-lg text-black lg:text-2xl nav-links hover:text-cyan-800 hover:border-b-2 border-cyan-800"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#discover" 
-              class="h-10 text-lg text-black lg:text-2xl nav-links hover:text-cyan-800 hover:border-b-2 border-cyan-800"
-              >Discover</a
-            >
-          </li>
-          <li>
-            <a
-              href="#facilities" 
-              class="h-10 text-lg text-black lg:text-2xl nav-links hover:text-cyan-800 hover:border-b-2 border-cyan-800"
-              >Facilities</a
-            >
-          </li>
-          <li>
-            <a
-              href="#rooms" 
-              class="h-10 text-lg text-black lg:text-2xl nav-links hover:text-cyan-800 hover:border-b-2 border-cyan-800"
-              >Rooms</a
-            >
-          </li>
-          <li>
-            <a
-              href="#tourism" 
-              class="h-10 text-lg text-black border-teal-700 lg:text-2xl nav-links hover:text-teal-700 hover:border-b-2"
-              >Tourism</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contact" 
-              class="h-10 text-lg text-black border-teal-700 lg:text-2xl nav-links hover:text-teal-700 hover:border-b-2"
-              >Contact</a
-            >
-          </li>
-        </ul>
-        <div class="hamburger-menu">
-          <i class="visible text-teal-700 cursor-pointer fa-solid fa-bars fa-2xl md:invisible "></i>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css"
+    integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Villa</title>
+</head>
+
+<body class="text-lg subpixel-antialiased">
+  <!-- Navbar -->
+  <nav class="fixed top-0 z-10 w-full h-40 py-3 text-black bg-transparent nav-bar">
+    <div class="container flex items-center justify-around p-2 mx-auto">
+      <h2 class="text-5xl italic brand-logo text-cyan-800">Villa</h2>
+      <ul class="flex-row hidden space-x-10 md:flex">
+        <li>
+          <a href="#"
+            class="h-10 text-lg text-black lg:text-2xl nav-links hover:text-cyan-800 hover:border-b-2 border-cyan-800">Home</a>
+        </li>
+        <li>
+          <a href="#discover"
+            class="h-10 text-lg text-black lg:text-2xl nav-links hover:text-cyan-800 hover:border-b-2 border-cyan-800">Discover</a>
+        </li>
+        <li>
+          <a href="#facilities"
+            class="h-10 text-lg text-black lg:text-2xl nav-links hover:text-cyan-800 hover:border-b-2 border-cyan-800">Facilities</a>
+        </li>
+        <li>
+          <a href="#rooms"
+            class="h-10 text-lg text-black lg:text-2xl nav-links hover:text-cyan-800 hover:border-b-2 border-cyan-800">Rooms</a>
+        </li>
+        <li>
+          <a href="#tourism"
+            class="h-10 text-lg text-black border-teal-700 lg:text-2xl nav-links hover:text-teal-700 hover:border-b-2">Tourism</a>
+        </li>
+        <li>
+          <a href="#contact"
+            class="h-10 text-lg text-black border-teal-700 lg:text-2xl nav-links hover:text-teal-700 hover:border-b-2">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger-menu">
+        <i class="visible text-teal-700 cursor-pointer fa-solid fa-bars fa-2xl md:invisible "></i>
       </div>
-    </nav>
-    <div class="fixed top-0 z-20 invisible w-1/3 h-full py-20 bg-gradient-to-r from-sky-700 to-transparent side-bar backdrop-blur-md md:invisible">
-       <ul class="flex-col items-center justify-center w-full space-y-10 text-center">
-          <li>
-            <a
-              href="#" 
-              class="h-10 text-lg font-bold text-white border-black lg:text-2xl nav-links hover:text-black hover:border-b-2"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#discover" 
-              class="h-10 text-lg font-bold text-white border-black lg:text-2xl nav-links hover:text-black hover:border-b-2 " 
-              >Discover</a
-            >
-          </li>
-          <li>
-            <a
-              href="#facilities" 
-              class="h-10 text-lg font-bold text-white border-black lg:text-2xl nav-links hover:text-black hover:border-b-2"
-              >Facilities</a
-            >
-          </li>
-          <li>
-            <a
-              href="#rooms" 
-              class="h-10 text-lg font-bold text-white border-black lg:text-2xl nav-links hover:text-black hover:border-b-2"
-              >Rooms</a
-            >
-          </li>
-          <li>
-            <a
-              href="#tourism" 
-              class="h-10 text-lg font-bold text-white border-black lg:text-2xl nav-links hover:text-black hover:border-b-2"
-              >Tourism</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contact" 
-              class="h-10 text-lg font-bold text-white border-black lg:text-2xl nav-links hover:text-black hover:border-b-2"
-              >Contact</a
-            >
-          </li>
-        </ul>
     </div>
-    <!-- Showcase -->
-    <section id="showcase" class="w-full h-1/3">
-      <div
-        class="container flex flex-col items-center justify-center h-full mx-auto space-y-6 text-center"
-      >
-        <h2
-          class="py-2 mb-0 italic font-bold text-gray-500 text-3Xl md:text-7xl"
-        >
-          Amazing Experience
-        </h2>
-        <p class="text-base text-gray-600 md:text-lg">
-          Villa is one of the most beautiful and relaxing places at the
-          Mediterranean sea
+  </nav>
+  <div
+    class="fixed top-0 z-20 invisible w-2/3 h-full py-20 bg-gradient-to-r from-sky-700 to-transparent side-bar backdrop-blur-md md:invisible">
+    <ul class="flex-col items-center justify-center w-full space-y-10 text-center">
+      <li>
+        <a href="#"
+          class="h-10 text-lg font-bold text-white border-black lg:text-2xl nav-links hover:text-black hover:border-b-2">Home</a>
+      </li>
+      <li>
+        <a href="#discover"
+          class="h-10 text-lg font-bold text-white border-black lg:text-2xl nav-links hover:text-black hover:border-b-2 ">Discover</a>
+      </li>
+      <li>
+        <a href="#facilities"
+          class="h-10 text-lg font-bold text-white border-black lg:text-2xl nav-links hover:text-black hover:border-b-2">Facilities</a>
+      </li>
+      <li>
+        <a href="#rooms"
+          class="h-10 text-lg font-bold text-white border-black lg:text-2xl nav-links hover:text-black hover:border-b-2">Rooms</a>
+      </li>
+      <li>
+        <a href="#tourism"
+          class="h-10 text-lg font-bold text-white border-black lg:text-2xl nav-links hover:text-black hover:border-b-2">Tourism</a>
+      </li>
+      <li>
+        <a href="#contact"
+          class="h-10 text-lg font-bold text-white border-black lg:text-2xl nav-links hover:text-black hover:border-b-2">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Showcase -->
+  <section id="showcase" class="w-full h-1/3">
+    <div class="container flex flex-col items-center justify-center h-full mx-auto space-y-6 text-center">
+      <h2 class="py-2 mb-0 italic font-bold text-gray-500 text-3Xl md:text-7xl">
+        Amazing Experience
+      </h2>
+      <p class="text-base text-gray-600 md:text-lg">
+        Villa is one of the most beautiful and relaxing places at the
+        Mediterranean sea
+      </p>
+    </div>
+  </section>
+
+  <!-- Discover -->
+  <section id="discover" class="w-full">
+    <div class="container p-5 mx-auto text-center">
+      <div class="container w-full mx-auto text-center">
+        <p class="pt-24 font-bold text-teal-800">DISCOVER</p>
+        <h3 class="pt-5 mb-12 italic font-bold text-gray-800 text-3Xl md:text-5xl">
+          Get To Know Villa
+        </h3>
+        <p class="w-full text-sm italic text-gray-500 md:text-base">
+          Villa is an unique Bed & Breakfast tourism facility situated on the
+          magnificent Mediterranean sea shores, prepared to welcome
+          tranquility seeking tourists all year long. Click the images below
+          to see more
         </p>
       </div>
-    </section>
-
-    <!-- Discover -->
-    <section id="discover" class="w-full">
-      <div class="container p-5 mx-auto text-center">
-        <div class="container w-full mx-auto text-center">
-          <p class="pt-24 font-bold text-teal-800">DISCOVER</p>
-          <h3
-            class="pt-5 mb-12 italic font-bold text-gray-800 text-3Xl md:text-5xl"
-          >
-            Get To Know Villa
-          </h3>
-          <p class="w-full text-sm italic text-gray-500 md:text-base">
-            Villa is an unique Bed & Breakfast tourism facility situated on the
-            magnificent Mediterranean sea shores, prepared to welcome
-            tranquility seeking tourists all year long. Click the images below
-            to see more
-          </p>
-        </div>
-        <div class="container relative">
-             <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
-        <li class="p-2 bg-teal-800 prev z-8" data-controls="prev" aria-controls="customize" tabindex="-1">
+      <div class="container relative">
+        <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+          <li class="p-2 bg-teal-800 prev z-8" data-controls="prev" aria-controls="customize" tabindex="-1">
             <i class="fas fa-angle-left fa-xl z-8"></i>
-        </li>
-        <li class="p-2 bg-teal-800 next" data-controls="next" aria-controls="customize" tabindex="-1">
-            <i class="fas fa-angle-right fa-xl"></i>          
-        </li>
-    </ul>
-    <div class="my-slider">
-        <div class="slider-item">
-            <div class="card">                
-                <img  class="overflow-hidden discover-image hover:scale-105" id="1" src="./img/discover-image-1.jpg" alt=""/>
-               
-            </div>
-        </div>
-        
-        <div class="slider-item">
-            <div class="card">                
-                <img  class="overflow-hidden hover:scale-105 discover-image" id="2" src="./img/discover-image-2.jpg" alt="">                       
-               
-            </div>
-        </div>
-        
-        <div class="slider-item">
-            <div class="card">                
-                <img  class="overflow-hidden hover:scale-105 discover-image" id="3" src="./img/discover-image-3.jpg "  alt="">
-                
-            </div>
-        </div>
-        <div class="slider-item">
-            <div class="card">                
-                <img  class="overflow-hidden discover-image hover:scale-105" id="4" src="./img/discover-image-4.jpg " alt="">
-               
-            </div>
-        </div>
-        <div class="slider-item">
-            <div class="card">                
-                <img  class="overflow-hidden hover:scale-105 discover-image" id="5" src="./img/discover-image-5.jpg " alt="">
-                
-            </div>
-        </div>
-        <div class="slider-item">
-            <div class="card">                
-                <img  class="overflow-hidden discover-image hover:scale-105"  id="6" src="./img/facilities-restaurant.jpg " alt="">
-               
-            </div>
-        </div>
-    </div>    
-        </div>
-         
-      </div>
-      <div class="fixed z-20 w-11/12 bg-gradient-to-r from-black to-transparent backdrop-blur-md image-box h-2/3 top-1/4 left-3 ">
-        <i class="absolute z-30 text-black cursor-pointer fa-solid fa-rectangle-xmark fa-2xl top-8 right-5 close-btn"></i>
-        <div class="z-30 w-10/12 mx-auto my-10 image-container h-5/6">
+          </li>
+          <li class="p-2 bg-teal-800 next" data-controls="next" aria-controls="customize" tabindex="-1">
+            <i class="fas fa-angle-right fa-xl"></i>
+          </li>
+        </ul>
+        <div class="my-slider">
+          <div class="slider-item">
+            <div class="card">
+              <img class="overflow-hidden discover-image hover:scale-105" id="1" src="./img/discover-image-1.jpg"
+                alt="" />
 
-        </div>
-      </div>
-    </section>
+            </div>
+          </div>
 
-    <section id="facilities" class="my-2 backdrop-blur-sm">
-        <div class="container w-full h-full mx-auto text-center backdrop-blur-sm">
-          <p class="py-8 text-xl font-semibold text-center md:text-3xl">Facilities</p>
-          <h2 class="mb-12 text-2xl italic font-bold text-teal-800 md:text-5xl ">Everything You Need</h2>
-          <div class="flex items-center justify-around h-24 p-5 mx-5 bg-white rounded-b-none lg:rounded-md md:mx-auto lg:w-1/2 facility-nav ">
-            <div class="cursor-pointer beach facility-nav-icon " id="1">
-                 <i class="text-gray-500 active fa-regular fa-sun md:fa-xl facility-nav-icon-icon facility-nav-icon" id="1"></i>
-                 <p class="text-xs md:text-base active facility-nav-icon facility-nav-icon-p" id="1">Beach</p>
-            </div>
-             <div class="cursor-pointer parking facility-nav-icon" id="2">
-                 <i class="text-gray-500 fa-solid fa-car md:fa-xl facility-nav-icon facility-nav-icon-icon" id="2"></i>
-                 <p class="text-xs md:text-base facility-nav-icon facility-nav-icon-p" id="2">Parking</p>
-            </div>
-             <div class="cursor-pointer playground facility-nav-icon" id="3">
-                 <i class="text-gray-500 fa-regular fa-futbol md:fa-xl facility-nav-icon facility-nav-icon-icon" id="3"></i>
-                 <p class="text-xs md:text-base facility-nav-icon facility-nav-icon-p" id="3">Playground</p>
-            </div>
-             <div class="cursor-pointer restaurant facility-nav-icon" id="4">
-                 <i class="text-gray-500 fa-solid fa-utensils md:fa-xl facility-nav-icon facility-nav-icon-icon" id="4"></i>
-                 <p class="text-xs md:text-base facility-nav-icon facility-nav-icon-p" id="4">Restaurant</p>
-            </div>
-             <div class="cursor-pointer terrace facility-nav-icon" id="5">
-                  <i class="text-gray-500 fa-solid fa-martini-glass md:fa-xl facility-nav-icon facility-nav-icon-icon" id="5"></i>
-                 <p class="text-xs md:text-base facility-nav-icon facility-nav-icon-p" id="5">Terrace</p>
-            </div>
-            
-          </div>
-          <div class="container flex items-center justify-center mx-5 bg-white rounded-t-none lg:rounded-md md:mx-auto p-7 beach-div facility-container ">
-            <div class="w-11/12 lg:w-1/2 lg:mr-5">
-              <img src="img/facilities-beach.jpg" alt="" class="w-full facility-image">
-            </div>
-            <div class="w-11/12 p-5 text-left lg:w-1/2 facility-text1">
-                <h2 class="text-2xl italic font-bold text-gray-600 lg:text-3xl facility-text-h2">Crystal Clear Turquoise Waters And Warm Beaches</h2>
-                <p class="my-3 text-sm text-gray-500 facility-text-p">There are 2 beautiful sunny beaches near Villa’s location conveniently equipped with beach chairs, umbrellas, beach bar, showers and trained life guards for <span class="text-teal-700 facility-text-span">your safety</span> </p>
-                <p class="text-base font-bold text-teal-700 facility-text-p2">SWIMMING SCHEDULE: 08:00 - 23:00</p>
-            </div>
-           
-          </div>
-        </div>
-    </section>
+          <div class="slider-item">
+            <div class="card">
+              <img class="overflow-hidden hover:scale-105 discover-image" id="2" src="./img/discover-image-2.jpg"
+                alt="">
 
-    <section id="rooms">
-      <div class="container py-5 mx-auto text-center">
-        <p class="font-semibold text-teal-700 ">ROOMS</p>
-        <h3 class="text-5xl italic font-bold text-gray-600">Comfort & Relaxation</h3>
-        <p class="py-5 text-gray-700">All our rooms are equipped by default with the following amenities:</p>
-        <div class="flex flex-wrap items-center justify-center mb-10 space-x-6">
-          <div class="flex items-center justify-center space-x-1">
-            <i class="text-teal-600 fa-solid fa-snowflake fa-xs"></i>
-            <p class="text-sm text-gray-700">Air conditioning</p>
+            </div>
           </div>
-          <div class="flex items-center justify-center space-x-1">
-            <i class="text-teal-600 fa-regular fa-square fa-xs"></i>
-            <p class="text-sm text-gray-700">Cabinet Fridge</p>
+
+          <div class="slider-item">
+            <div class="card">
+              <img class="overflow-hidden hover:scale-105 discover-image" id="3" src="./img/discover-image-3.jpg "
+                alt="">
+
+            </div>
           </div>
-          <div class="flex items-center justify-center space-x-1">
-            <i class="text-teal-600 fa-solid fa-wifi fa-xs"></i>
-            <p class="text-sm text-gray-700">Wifi</p>
+          <div class="slider-item">
+            <div class="card">
+              <img class="overflow-hidden discover-image hover:scale-105" id="4" src="./img/discover-image-4.jpg "
+                alt="">
+
+            </div>
           </div>
-          <div class="flex items-center justify-center space-x-1">
-            <i class="text-teal-600 fa-regular fa-square fa-xs"></i>
-            <p class="text-sm text-gray-700">Private bathrooms</p>
+          <div class="slider-item">
+            <div class="card">
+              <img class="overflow-hidden hover:scale-105 discover-image" id="5" src="./img/discover-image-5.jpg "
+                alt="">
+
+            </div>
           </div>
-          <div class="flex items-center justify-center space-x-1">
-            <i class="text-teal-600 fa-solid fa-tv fa-xs"></i>
-            <p class="text-sm text-gray-700">Widescreen LCD</p>
-          </div>
-        </div>
-        <div class="flex flex-col items-center space-x-0 room-details md:flex-row lg:w-3/4 md:mx-auto md:justify-between md:space-y-0 md:space-x-10">
-          <div class="space-y-2 text-center lg:w-1/4 room-image h-96 lg:space-y-4">
-            <img src="./img/room-3-image-details-1024x838.jpg"  alt="">
-            <h3 class="text-xl italic font-bold text-gray-500 lg:text-2xl bold">Presidential Room</h3>
-            <p class="text-sm text-gray-500">High class luxury for the most demanding tourists. Features balcony and panorama</p>
-            <button class="p-2 px-3 my-3 transition-all duration-100 bg-transparent border-2 border-gray-500 hover:bg-gray-500 hover:text-white">DETAILS</button>
-          </div>
-          <div class="space-y-2 text-center lg:w-1/4 room-image h-96 lg:space-y-4">
-            <img src="./img/room-2-image-details-1024x838.jpg"  alt="">
-            <h3 class="text-xl italic font-bold text-gray-500 lg:text-2xl bold">Panormaic Room</h3>
-            <p class="text-sm text-gray-500">Get the best view to the beautiful sea and splendid surroundings at a moderate price</p>
-            <button class="p-2 px-3 my-3 transition-all duration-100 bg-transparent border-2 border-gray-500 hover:bg-gray-500 hover:text-white">DETAILS</button>
-          </div>
-          <div class="space-y-2 text-center lg:w-1/4 room-image h-96 lg:space-y-4">
-            <img src="./img/room-1-image-details-1024x838.jpg"  alt="">
-            <h3 class="text-xl italic font-bold text-gray-500 lg:text-2xl bold">Balcony Room</h3>
-            <p class="text-sm text-gray-500 ">Our entry level room gives you access to all amenities at a     really    affordable price at villa.</p>
-            <button class="p-2 px-3 my-3 transition-all duration-100 bg-transparent border-2 border-gray-500 hover:bg-gray-500 hover:text-white">DETAILS</button>
+          <div class="slider-item">
+            <div class="card">
+              <img class="overflow-hidden discover-image hover:scale-105" id="6" src="./img/facilities-restaurant.jpg "
+                alt="">
+
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="tourism" class="mt-32">
-      <div class="container w-full pt-32 pb-20 mx-auto text-center ">
-        <p class="text-teal-700">TOURISM</p>
-        <h3 class="pb-10 text-5xl italic font-bold text-gray-500">Popular Attractions</h3>
-        <div class="flex flex-col items-center justify-center w-full space-y-5 md:space-y-0 md:mx-auto md:space-x-10 md:flex-row md:w-4/5">
-          <div class="space-y-3 text-left basis-1/2 ">
-            <img src="img/discover-image-4.jpg" alt="">
-              <h5 class="font-semibold text-teal-600">JAMES CLARCK’S WHITE HOUSE:</h5>
-              <p class="text-sm text-gray-500">Don't miss this great tourist attraction. The famous writer's house will fascinate literature enthusiasts and history aficionados</p>
-          </div>
-          <div class="space-y-3 text-left basis-1/2 ">
-            <img src="img/discover-image-3.jpg" alt="">
-              <h5 class="font-semibold text-teal-600">AEGEAN BELVEDERE:</h5>
-              <p class="text-sm text-gray-500">The best place to watch the sunset in a romantic atmosphere and maybe even drink a glass of wine at one of the many bistros</p>
-          </div>
+
+    </div>
+    <div
+      class="fixed z-20 w-11/12 bg-gradient-to-r from-black to-transparent backdrop-blur-md image-box h-2/3 top-1/4 left-3 ">
+      <i class="absolute z-30 text-black cursor-pointer fa-solid fa-rectangle-xmark fa-2xl top-8 right-5 close-btn"></i>
+      <div class="z-30 w-10/12 mx-auto my-10 image-container h-5/6">
+
+      </div>
+    </div>
+  </section>
+
+  <section id="facilities" class="my-2 backdrop-blur-sm">
+    <div class="container w-full h-full mx-auto text-center backdrop-blur-sm">
+      <p class="py-8 text-xl font-semibold text-center md:text-3xl">Facilities</p>
+      <h2 class="mb-12 text-2xl italic font-bold text-teal-800 md:text-5xl ">Everything You Need</h2>
+      <div
+        class="flex items-center justify-around h-24 p-5 mx-5 bg-white rounded-b-none lg:rounded-md md:mx-auto lg:w-1/2 facility-nav ">
+        <div class="cursor-pointer beach facility-nav-icon " id="1">
+          <i class="text-gray-500 active fa-regular fa-sun md:fa-xl facility-nav-icon-icon facility-nav-icon"
+            id="1"></i>
+          <p class="text-xs md:text-base active facility-nav-icon facility-nav-icon-p" id="1">Beach</p>
         </div>
-        <div class="flex flex-col items-center justify-center w-full mt-12 space-y-5 md:space-y-0 md:mx-auto md:space-x-10 md:flex-row md:w-4/5">
-          <div class="space-y-3 text-left basis-1/2 ">
-            <img src="img/discover-image-1.jpg" alt="">
-              <h5 class="font-semibold text-teal-600">NAVAGIO BEACH:</h5>
-              <p class="text-sm text-gray-500">Is the most famous beach at the Mediterranean sea with white sands and cool beach bars. In the weekends take the train and avoid going by car</p>
-          </div>
-          <div class="space-y-3 text-left basis-1/2 ">
-            <img src="img/discover-image-2.jpg" alt="">
-              <h5 class="font-semibold text-teal-600">AFITOS OLD TOWN:</h5>
-              <p class="text-sm text-gray-500">Full of historical importance for this part of the world, Afitos Old Towm will impress you with its charming caffes and familiar taverns</p>
-          </div>
+        <div class="cursor-pointer parking facility-nav-icon" id="2">
+          <i class="text-gray-500 fa-solid fa-car md:fa-xl facility-nav-icon facility-nav-icon-icon" id="2"></i>
+          <p class="text-xs md:text-base facility-nav-icon facility-nav-icon-p" id="2">Parking</p>
+        </div>
+        <div class="cursor-pointer playground facility-nav-icon" id="3">
+          <i class="text-gray-500 fa-regular fa-futbol md:fa-xl facility-nav-icon facility-nav-icon-icon" id="3"></i>
+          <p class="text-xs md:text-base facility-nav-icon facility-nav-icon-p" id="3">Playground</p>
+        </div>
+        <div class="cursor-pointer restaurant facility-nav-icon" id="4">
+          <i class="text-gray-500 fa-solid fa-utensils md:fa-xl facility-nav-icon facility-nav-icon-icon" id="4"></i>
+          <p class="text-xs md:text-base facility-nav-icon facility-nav-icon-p" id="4">Restaurant</p>
+        </div>
+        <div class="cursor-pointer terrace facility-nav-icon" id="5">
+          <i class="text-gray-500 fa-solid fa-martini-glass md:fa-xl facility-nav-icon facility-nav-icon-icon"
+            id="5"></i>
+          <p class="text-xs md:text-base facility-nav-icon facility-nav-icon-p" id="5">Terrace</p>
+        </div>
+
+      </div>
+      <div
+        class="container flex items-center justify-center mx-5 bg-white rounded-t-none shadow-md lg:rounded-md md:mx-auto p-7 beach-div facility-container">
+        <div class="w-11/12 lg:w-1/2 lg:mr-5">
+          <img src="img/facilities-beach.jpg" alt="" class="w-full transition-all duration-100 ease-in facility-image">
+        </div>
+        <div class="w-11/12 p-5 text-left lg:w-1/2 facility-text1">
+          <h2 class="text-2xl italic font-bold text-gray-600 lg:text-3xl facility-text-h2">Crystal Clear Turquoise
+            Waters And Warm Beaches</h2>
+          <p class="my-3 text-sm text-gray-500 facility-text-p">There are 2 beautiful sunny beaches near Villa’s
+            location conveniently equipped with beach chairs, umbrellas, beach bar, showers and trained life guards for
+            <span class="text-teal-700 facility-text-span">your safety</span> </p>
+          <p class="text-base font-bold text-teal-700 facility-text-p2">SWIMMING SCHEDULE: 08:00 - 23:00</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="rooms">
+    <div class="container py-5 mx-auto text-center">
+      <p class="font-semibold text-teal-700 ">ROOMS</p>
+      <h3 class="text-5xl italic font-bold text-gray-600">Comfort & Relaxation</h3>
+      <p class="py-5 text-gray-700">All our rooms are equipped by default with the following amenities:</p>
+      <div class="flex flex-wrap items-center justify-center mb-10 space-x-6">
+        <div class="flex items-center justify-center space-x-1">
+          <i class="text-teal-600 fa-solid fa-snowflake fa-xs"></i>
+          <p class="text-sm text-gray-700">Air conditioning</p>
+        </div>
+        <div class="flex items-center justify-center space-x-1">
+          <i class="text-teal-600 fa-regular fa-square fa-xs"></i>
+          <p class="text-sm text-gray-700">Cabinet Fridge</p>
+        </div>
+        <div class="flex items-center justify-center space-x-1">
+          <i class="text-teal-600 fa-solid fa-wifi fa-xs"></i>
+          <p class="text-sm text-gray-700">Wifi</p>
+        </div>
+        <div class="flex items-center justify-center space-x-1">
+          <i class="text-teal-600 fa-regular fa-square fa-xs"></i>
+          <p class="text-sm text-gray-700">Private bathrooms</p>
+        </div>
+        <div class="flex items-center justify-center space-x-1">
+          <i class="text-teal-600 fa-solid fa-tv fa-xs"></i>
+          <p class="text-sm text-gray-700">Widescreen LCD</p>
         </div>
       </div>
-    </section>
-    <section id="review" class="flex items-center justify-center brightness-75">
-      <div class="container w-full mx-auto backdrop-blur-sm" >
-          <div class="owl-carousel owl-theme">
-            <div class="owl-slide d-flex align-items-center cover" >
-               <div class="container">
-                 <div class="row justify-content-center justify-content-md-start">
-                    <div class="static col-10 col-md-6">
-                      <div class="owl-slide-text">
-                          <div class="flex flex-col justify-center px-2 py-32 space-y-5 text-white rounded-3xl bg-gradient-to-r md:space-y-0 from-teal-800 to-transparent md:justify-between md:flex-row">
-                             <div class="text-center basis-1/4">
-                                <p class="mb-10 text-base font-semibold">"Villa is great! It has everything you could ask for at affordable prices. Except the Presidential Room which is, well... presidential :)"</p>
-                                <h3 class="text-xl font-semibold">Simone Finley  - ★ ★ ★ ★ ★</h3>
-                              </div>
-                              <div class="text-center basis-1/4">
-                                <p class="mb-10 text-base font-semibold">"My kids absolutely loved Villa because of the well designed and safe playground. But grownups had a great time too"</p>
-                                <h3 class="text-xl font-semibold">Paula Jerry  - ★ ★ ★ ★ ★</h3>
-                              </div>
-                              <div class="text-center basis-1/4">
-                                <p class="mb-10 text-base font-semibold">"If you love good food, nice music and gorgeous beaches then Villa will be the perfect vacation spot for you. I loved it "</p>
-                                <h3 class="text-xl font-semibold">Ron Blake  - ★ ★ ★ ★ ★</h3>
-                              </div>
-                          </div>
-                      </div><!-- /owl-slide-text -->
+      <div
+        class="flex flex-col items-center space-x-0 room-details md:flex-row lg:w-3/4 md:mx-auto md:justify-between md:space-y-0 md:space-x-10">
+        <div class="space-y-2 text-center lg:w-1/4 room-image h-96 lg:space-y-4">
+          <img src="./img/room-3-image-details-1024x838.jpg" alt="">
+          <h3 class="text-xl italic font-bold text-gray-500 lg:text-2xl bold">Presidential Room</h3>
+          <p class="text-sm text-gray-500">High class luxury for the most demanding tourists. Features balcony and
+            panorama</p>
+          <button
+            class="p-2 px-3 my-3 transition-all duration-100 bg-transparent border-2 border-gray-500 hover:bg-gray-500 hover:text-white">DETAILS</button>
+        </div>
+        <div class="space-y-2 text-center lg:w-1/4 room-image h-96 lg:space-y-4">
+          <img src="./img/room-2-image-details-1024x838.jpg" alt="">
+          <h3 class="text-xl italic font-bold text-gray-500 lg:text-2xl bold">Panormaic Room</h3>
+          <p class="text-sm text-gray-500">Get the best view to the beautiful sea and splendid surroundings at a
+            moderate price</p>
+          <button
+            class="p-2 px-3 my-3 transition-all duration-100 bg-transparent border-2 border-gray-500 hover:bg-gray-500 hover:text-white">DETAILS</button>
+        </div>
+        <div class="space-y-2 text-center lg:w-1/4 room-image h-96 lg:space-y-4">
+          <img src="./img/room-1-image-details-1024x838.jpg" alt="">
+          <h3 class="text-xl italic font-bold text-gray-500 lg:text-2xl bold">Balcony Room</h3>
+          <p class="text-sm text-gray-500 ">Our entry level room gives you access to all amenities at a really
+            affordable price at villa.</p>
+          <button
+            class="p-2 px-3 my-3 transition-all duration-100 bg-transparent border-2 border-gray-500 hover:bg-gray-500 hover:text-white">DETAILS</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="tourism" class="mt-32">
+    <div class="container w-full pt-32 pb-20 mx-auto text-center ">
+      <p class="text-teal-700">TOURISM</p>
+      <h3 class="pb-10 text-5xl italic font-bold text-gray-500">Popular Attractions</h3>
+      <div
+        class="flex flex-col items-center justify-center w-full space-y-5 md:space-y-0 md:mx-auto md:space-x-10 md:flex-row md:w-4/5">
+        <div class="space-y-3 text-left basis-1/2 ">
+          <img src="img/discover-image-4.jpg" alt="">
+          <h5 class="font-semibold text-teal-600">JAMES CLARCK’S WHITE HOUSE:</h5>
+          <p class="text-sm text-gray-500">Don't miss this great tourist attraction. The famous writer's house will
+            fascinate literature enthusiasts and history aficionados</p>
+        </div>
+        <div class="space-y-3 text-left basis-1/2 ">
+          <img src="img/discover-image-3.jpg" alt="">
+          <h5 class="font-semibold text-teal-600">AEGEAN BELVEDERE:</h5>
+          <p class="text-sm text-gray-500">The best place to watch the sunset in a romantic atmosphere and maybe even
+            drink a glass of wine at one of the many bistros</p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center w-full mt-12 space-y-5 md:space-y-0 md:mx-auto md:space-x-10 md:flex-row md:w-4/5">
+        <div class="space-y-3 text-left basis-1/2 ">
+          <img src="img/discover-image-1.jpg" alt="">
+          <h5 class="font-semibold text-teal-600">NAVAGIO BEACH:</h5>
+          <p class="text-sm text-gray-500">Is the most famous beach at the Mediterranean sea with white sands and cool
+            beach bars. In the weekends take the train and avoid going by car</p>
+        </div>
+        <div class="space-y-3 text-left basis-1/2 ">
+          <img src="img/discover-image-2.jpg" alt="">
+          <h5 class="font-semibold text-teal-600">AFITOS OLD TOWN:</h5>
+          <p class="text-sm text-gray-500">Full of historical importance for this part of the world, Afitos Old Towm
+            will impress you with its charming caffes and familiar taverns</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="review" class="flex items-center justify-center brightness-75">
+    <div class="container w-full mx-auto backdrop-blur-sm">
+      <div class="owl-carousel owl-theme">
+        <div class="owl-slide d-flex align-items-center cover">
+          <div class="container">
+            <div class="row justify-content-center justify-content-md-start">
+              <div class="static col-10 col-md-6">
+                <div class="owl-slide-text">
+                  <div
+                    class="flex flex-col justify-center px-2 py-32 space-y-5 text-white rounded-3xl bg-gradient-to-r md:space-y-0 from-teal-800 to-transparent md:justify-between md:flex-row">
+                    <div class="text-center basis-1/4">
+                      <p class="mb-10 text-base font-semibold">"Villa is great! It has everything you could ask for at
+                        affordable prices. Except the Presidential Room which is, well... presidential :)"</p>
+                      <h3 class="text-xl font-semibold">Simone Finley - ★ ★ ★ ★ ★</h3>
+                    </div>
+                    <div class="text-center basis-1/4">
+                      <p class="mb-10 text-base font-semibold">"My kids absolutely loved Villa because of the well
+                        designed and safe playground. But grownups had a great time too"</p>
+                      <h3 class="text-xl font-semibold">Paula Jerry - ★ ★ ★ ★ ★</h3>
+                    </div>
+                    <div class="text-center basis-1/4">
+                      <p class="mb-10 text-base font-semibold">"If you love good food, nice music and gorgeous beaches
+                        then Villa will be the perfect vacation spot for you. I loved it "</p>
+                      <h3 class="text-xl font-semibold">Ron Blake - ★ ★ ★ ★ ★</h3>
                     </div>
                   </div>
-                </div>
-              </div><!-- /slide1 -->
-              <div class="owl-slide d-flex align-items-center cover" style="background-image: url(IMG_SRC);">
-               <div class="container">
-                 <div class="row justify-content-center justify-content-md-start">
-                    <div class="static col-10 col-md-6">
-                      <div class="owl-slide-text">
-                          <div class="flex flex-col justify-center px-2 py-32 text-white rounded-3xl bg-gradient-to-r from-teal-800 to-transparent md:justify-between md:flex-row">
-                             <div class="text-center basis-1/4">
-                                <p class="mb-10 text-base font-semibold">"Villa is great! It has everything you could ask for at affordable prices. Except the Presidential Room which is, well... presidential :)"</p>
-                                <h3 class="text-xl font-semibold">Simone Finley  - ★ ★ ★ ★ ★</h3>
-                              </div>
-                              <div class="text-center basis-1/4">
-                                <p class="mb-10 text-base font-semibold">"My kids absolutely loved Villa because of the well designed and safe playground. But grownups had a great time too"</p>
-                                <h3 class="text-xl font-semibold">Paula Jerry  - ★ ★ ★ ★ ★</h3>
-                              </div>
-                              <div class="text-center basis-1/4">
-                                <p class="mb-10 text-base font-semibold">"If you love good food, nice music and gorgeous beaches then Villa will be the perfect vacation spot for you. I loved it "</p>
-                                <h3 class="text-xl font-semibold">Ron Blake  - ★ ★ ★ ★ ★</h3>
-                              </div>
-                          </div>
-                      </div><!-- /owl-slide-text -->
-                    </div>
-                  </div>
-                </div>
+                </div><!-- /owl-slide-text -->
               </div>
-              <div class="owl-slide d-flex align-items-center cover" style="background-image: url(IMG_SRC);">
-               <div class="container">
-                 <div class="row justify-content-center justify-content-md-start">
-                    <div class="static col-10 col-md-6">
-                      <div class="owl-slide-text">
-                          <div class="flex flex-col justify-center px-2 py-32 text-white rounded-3xl bg-gradient-to-r from-teal-800 to-transparent md:justify-between md:flex-row">
-                             <div class="text-center basis-1/4">
-                                <p class="mb-10 text-base font-semibold">"Villa is great! It has everything you could ask for at affordable prices. Except the Presidential Room which is, well... presidential :)"</p>
-                                <h3 class="text-xl font-semibold">Simone Finley  - ★ ★ ★ ★ ★</h3>
-                              </div>
-                              <div class="text-center basis-1/4">
-                                <p class="mb-10 text-base font-semibold">"My kids absolutely loved Villa because of the well designed and safe playground. But grownups had a great time too"</p>
-                                <h3 class="text-xl font-semibold">Paula Jerry  - ★ ★ ★ ★ ★</h3>
-                              </div>
-                              <div class="text-center basis-1/4">
-                                <p class="mb-10 text-base font-semibold">"If you love good food, nice music and gorgeous beaches then Villa will be the perfect vacation spot for you. I loved it "</p>
-                                <h3 class="text-xl font-semibold">Ron Blake  - ★ ★ ★ ★ ★</h3>
-                              </div>
-                          </div>
-                      </div><!-- /owl-slide-text -->
+            </div>
+          </div>
+        </div><!-- /slide1 -->
+        <div class="owl-slide d-flex align-items-center cover" style="background-image: url(IMG_SRC);">
+          <div class="container">
+            <div class="row justify-content-center justify-content-md-start">
+              <div class="static col-10 col-md-6">
+                <div class="owl-slide-text">
+                  <div
+                    class="flex flex-col justify-center px-2 py-32 text-white rounded-3xl bg-gradient-to-r from-teal-800 to-transparent md:justify-between md:flex-row">
+                    <div class="text-center basis-1/4">
+                      <p class="mb-10 text-base font-semibold">"Villa is great! It has everything you could ask for at
+                        affordable prices. Except the Presidential Room which is, well... presidential :)"</p>
+                      <h3 class="text-xl font-semibold">Simone Finley - ★ ★ ★ ★ ★</h3>
+                    </div>
+                    <div class="text-center basis-1/4">
+                      <p class="mb-10 text-base font-semibold">"My kids absolutely loved Villa because of the well
+                        designed and safe playground. But grownups had a great time too"</p>
+                      <h3 class="text-xl font-semibold">Paula Jerry - ★ ★ ★ ★ ★</h3>
+                    </div>
+                    <div class="text-center basis-1/4">
+                      <p class="mb-10 text-base font-semibold">"If you love good food, nice music and gorgeous beaches
+                        then Villa will be the perfect vacation spot for you. I loved it "</p>
+                      <h3 class="text-xl font-semibold">Ron Blake - ★ ★ ★ ★ ★</h3>
                     </div>
                   </div>
-                </div>
+                </div><!-- /owl-slide-text -->
               </div>
-  <!-- two more slides here -->
-</div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-slide d-flex align-items-center cover" style="background-image: url(IMG_SRC);">
+          <div class="container">
+            <div class="row justify-content-center justify-content-md-start">
+              <div class="static col-10 col-md-6">
+                <div class="owl-slide-text">
+                  <div
+                    class="flex flex-col justify-center px-2 py-32 text-white rounded-3xl bg-gradient-to-r from-teal-800 to-transparent md:justify-between md:flex-row">
+                    <div class="text-center basis-1/4">
+                      <p class="mb-10 text-base font-semibold">"Villa is great! It has everything you could ask for at
+                        affordable prices. Except the Presidential Room which is, well... presidential :)"</p>
+                      <h3 class="text-xl font-semibold">Simone Finley - ★ ★ ★ ★ ★</h3>
+                    </div>
+                    <div class="text-center basis-1/4">
+                      <p class="mb-10 text-base font-semibold">"My kids absolutely loved Villa because of the well
+                        designed and safe playground. But grownups had a great time too"</p>
+                      <h3 class="text-xl font-semibold">Paula Jerry - ★ ★ ★ ★ ★</h3>
+                    </div>
+                    <div class="text-center basis-1/4">
+                      <p class="mb-10 text-base font-semibold">"If you love good food, nice music and gorgeous beaches
+                        then Villa will be the perfect vacation spot for you. I loved it "</p>
+                      <h3 class="text-xl font-semibold">Ron Blake - ★ ★ ★ ★ ★</h3>
+                    </div>
+                  </div>
+                </div><!-- /owl-slide-text -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- two more slides here -->
       </div>
-    </section>
-    
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact" class="flex justify-center py-8">
 
-      <div class="container text-center">
-        <p class="mb-2 font-semibold text-teal-700">CONTACT</p>
-        <h3 class="mb-2 text-5xl italic font-bold text-gray-600"> Location Information</h3>
-        <p class="mb-4 text-sm text-gray-500">Don't hesitate to use the form our contact details to get in touch.:</p>
-        <div class="flex flex-wrap items-center justify-center mb-10 space-x-6">
-          <div class="flex items-center justify-center space-x-1">
-            <i class="text-teal-600 fa-solid fa-location-dot fa-xs"></i>
-            <p class="text-sm text-gray-700">Afitos 63077, Greece</p>
-          </div>
-          <div class="flex items-center justify-center space-x-1">
-            <i class="text-teal-600 fa-solid fa-phone fa-xs"></i>
-            <p class="text-sm text-gray-700">+30 2463 082500</p>
-          </div>
-          <div class="flex items-center justify-center space-x-1">
-            <i class="text-teal-600 fa-solid fa-envelope fa-xs"></i>
-            <p class="text-sm text-gray-700">contact@villa.com</p>
-          </div>
+  <!-- Contact -->
+  <section id="contact" class="flex justify-center py-8">
+
+    <div class="container text-center">
+      <p class="mb-2 font-semibold text-teal-700">CONTACT</p>
+      <h3 class="mb-2 text-5xl italic font-bold text-gray-600"> Location Information</h3>
+      <p class="mb-4 text-sm text-gray-500">Don't hesitate to use the form our contact details to get in touch.:</p>
+      <div class="flex flex-wrap items-center justify-center mb-10 space-x-6">
+        <div class="flex items-center justify-center space-x-1">
+          <i class="text-teal-600 fa-solid fa-location-dot fa-xs"></i>
+          <p class="text-sm text-gray-700">Afitos 63077, Greece</p>
         </div>
-
-        <div class="flex items-center justify-center w-full">
-           <div class="mapouter"><div class="gmap_canvas"><iframe class="mx-auto gmap_iframe" width="60%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=358&amp;height=358&amp;hl=en&amp;q=san francisco CA 94129&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">MCPE Nation</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:358px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:358px;}.gmap_iframe {height:358px!important;}</style></div>
+        <div class="flex items-center justify-center space-x-1">
+          <i class="text-teal-600 fa-solid fa-phone fa-xs"></i>
+          <p class="text-sm text-gray-700">+30 2463 082500</p>
         </div>
-        
-      </div>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer id="footer" class="flex justify-center w-full py-5 text-white bg-gray-700">
-      <div class="container flex flex-col items-center justify-center space-y-5 md:flex-row md:justify-around md:space-y-0">
-        <div class="text-center basis-1/3 md:text-left">
-          <h3 class="mb-3 text-2xl italic font-bold">About Villa</h3>
-          <p class="text-base">Villa is a unique bed & breakfast tourism facility situated on the magnificent Mediterranean sea shores. Come and visit us!</p>
-        </div>
-       <div class="text-center basis-1/3 md:text-left">
-          <h3 class="mb-3 text-2xl italic font-bold">Follow Us On</h3>
-          <div class="flex justify-center space-x-4 text-3xl md:justify-start ">
-            <i class="text-white transition-all fa-brands fa-facebook hover:text-teal-700"></i>
-            <i class="text-white transition-all fa-brands fa-twitter hover:text-teal-700"></i>
-            <i class="text-white transition-all fa-brands fa-instagram hover:text-teal-700"></i>
-            <i class="text-white transition-all fa-brands fa-google hover:text-teal-700"></i>
-            <i class="text-white transition-all fa-brands fa-linkedin hover:text-teal-700"></i>
-          </div>
+        <div class="flex items-center justify-center space-x-1">
+          <i class="text-teal-600 fa-solid fa-envelope fa-xs"></i>
+          <p class="text-sm text-gray-700">contact@villa.com</p>
         </div>
       </div>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+      <div class="flex items-center justify-center w-full">
+        <div class="mapouter">
+          <div class="gmap_canvas"><iframe class="mx-auto gmap_iframe" width="60%" frameborder="0" scrolling="no"
+              marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?width=358&amp;height=358&amp;hl=en&amp;q=san francisco CA 94129&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+              href="https://mcpenation.com/">MCPE Nation</a></div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              width: 100%;
+              height: 358px;
+            }
+
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              width: 100%;
+              height: 358px;
+            }
+
+            .gmap_iframe {
+              height: 358px !important;
+            }
+          </style>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="flex justify-center w-full py-5 text-white bg-gray-700">
+    <div
+      class="container flex flex-col items-center justify-center space-y-5 md:flex-row md:justify-around md:space-y-0">
+      <div class="text-center basis-1/3 md:text-left">
+        <h3 class="mb-3 text-2xl italic font-bold">About Villa</h3>
+        <p class="text-base">Villa is a unique bed & breakfast tourism facility situated on the magnificent
+          Mediterranean sea shores. Come and visit us!</p>
+      </div>
+      <div class="text-center basis-1/3 md:text-left">
+        <h3 class="mb-3 text-2xl italic font-bold">Follow Us On</h3>
+        <div class="flex justify-center space-x-4 text-3xl md:justify-start ">
+          <i class="text-white transition-all fa-brands fa-facebook hover:text-teal-700"></i>
+          <i class="text-white transition-all fa-brands fa-twitter hover:text-teal-700"></i>
+          <i class="text-white transition-all fa-brands fa-instagram hover:text-teal-700"></i>
+          <i class="text-white transition-all fa-brands fa-google hover:text-teal-700"></i>
+          <i class="text-white transition-all fa-brands fa-linkedin hover:text-teal-700"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
-
-
-

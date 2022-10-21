@@ -13,7 +13,7 @@ window.addEventListener('scroll', (event) => {
     
     
     navbar.style.opacity = '0'
-    navbar.style.height = '100px'
+    navbar.style.height = '80px'
     navbar.style.transition = 'all 1s'
     navbar.style.opacity = '1'
   }
@@ -99,10 +99,10 @@ const facilityTextP = document.querySelector('.facility-text-p')
 const facilityTextP2 = document.querySelector('.facility-text-p2')
 const facilityTextSpan = document.querySelector('.facility-text-span')
 const facilityImage = document.querySelector('.facility-image')
-
+const facilityContainer = document.querySelector('.facility-image')
 for (const icon of facilityNavIcons) {
   icon.addEventListener('click', function click(e) {
-    
+   
     if (e.target.id === "1")
     {
       facilityImage.src = "./img/facilities-beach.jpg"
@@ -201,7 +201,11 @@ for (const icon of facilityNavIcons) {
       facilityTextSpan.innerText = 'Book one of our room'
       facilityTextP2.innerText = 'SERVING SCHEDULE: 08:00 - 23:00'
     }
+     facilityContainer.style.transition = 'opacity 4s ease-in-out'
+     facilityContainer.style.opacity = '0'
+    facilityContainer.style.opacity = '1'
     
+   
   });
 }
 

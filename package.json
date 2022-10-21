@@ -73,5 +73,13 @@
     "xtend": "^4.0.2",
     "yaml": "^1.10.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varshapun/Villa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/varshapun/Villa/issues"
+  },
+  "homepage": "https://github.com/varshapun/Villa#readme",
   "description": ""
 }
