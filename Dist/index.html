@@ -21,14 +21,14 @@
     integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/main.css" />
-  <title>Villa</title>
+  <title>Shiv Villa</title>
 </head>
 
 <body class="text-lg subpixel-antialiased">
   <!-- Navbar -->
   <nav class="fixed top-0 z-10 w-full h-40 py-3 text-black bg-transparent nav-bar">
     <div class="container flex items-center justify-around p-2 mx-auto">
-      <h2 class="text-5xl italic brand-logo text-cyan-800">Villa</h2>
+      <h2 class="text-5xl italic brand-logo text-cyan-800">Shiv Villa</h2>
       <ul class="flex-row hidden space-x-10 md:flex">
         <li>
           <a href="#"
@@ -60,8 +60,11 @@
       </div>
     </div>
   </nav>
+
   <div
     class="fixed top-0 z-20 invisible w-2/3 h-full py-20 bg-gradient-to-r from-sky-700 to-transparent side-bar backdrop-blur-md md:invisible">
+    <i
+      class="absolute text-2xl cursor-pointer top-10 right-5 text-sky-700 fa-solid fa-rectangle-xmark close-side-bar "></i>
     <ul class="flex-col items-center justify-center w-full space-y-10 text-center">
       <li>
         <a href="#"
@@ -89,6 +92,8 @@
       </li>
     </ul>
   </div>
+
+
   <!-- Showcase -->
   <section id="showcase" class="w-full h-1/3">
     <div class="container flex flex-col items-center justify-center h-full mx-auto space-y-6 text-center">
@@ -189,7 +194,7 @@
       <p class="py-8 text-xl font-semibold text-center md:text-3xl">Facilities</p>
       <h2 class="mb-12 text-2xl italic font-bold text-teal-800 md:text-5xl ">Everything You Need</h2>
       <div
-        class="flex items-center justify-around h-24 p-5 mx-5 bg-white rounded-b-none lg:rounded-md md:mx-auto lg:w-1/2 facility-nav ">
+        class="flex items-center justify-around h-24 mx-5 bg-white rounded-b-none md:p-5 lg:rounded-md md:mx-auto lg:w-1/2 facility-nav ">
         <div class="cursor-pointer beach facility-nav-icon " id="1">
           <i class="text-gray-500 active fa-regular fa-sun md:fa-xl facility-nav-icon-icon facility-nav-icon"
             id="1"></i>
@@ -217,14 +222,15 @@
       <div
         class="container flex items-center justify-center mx-5 bg-white rounded-t-none shadow-md lg:rounded-md md:mx-auto p-7 beach-div facility-container">
         <div class="w-11/12 lg:w-1/2 lg:mr-5">
-          <img src="img/facilities-beach.jpg" alt="" class="w-full transition-all duration-100 ease-in facility-image">
+          <img src="img/facilities-beach.jpg" alt="" class="w-full transition-all duration-1000 ease-in facility-image">
         </div>
         <div class="w-11/12 p-5 text-left lg:w-1/2 facility-text1">
           <h2 class="text-2xl italic font-bold text-gray-600 lg:text-3xl facility-text-h2">Crystal Clear Turquoise
             Waters And Warm Beaches</h2>
           <p class="my-3 text-sm text-gray-500 facility-text-p">There are 2 beautiful sunny beaches near Villa’s
             location conveniently equipped with beach chairs, umbrellas, beach bar, showers and trained life guards for
-            <span class="text-teal-700 facility-text-span">your safety</span> </p>
+            <span class="text-teal-700 facility-text-span">your safety</span>
+          </p>
           <p class="text-base font-bold text-teal-700 facility-text-p2">SWIMMING SCHEDULE: 08:00 - 23:00</p>
         </div>
 
@@ -235,28 +241,27 @@
   <section id="rooms">
     <div class="container py-5 mx-auto text-center">
       <p class="font-semibold text-teal-700 ">ROOMS</p>
-      <h3 class="text-5xl italic font-bold text-gray-600">Comfort & Relaxation</h3>
-      <p class="py-5 text-gray-700">All our rooms are equipped by default with the following amenities:</p>
-      <div class="flex flex-wrap items-center justify-center mb-10 space-x-6">
-        <div class="flex items-center justify-center space-x-1">
+      <h3 class="text-2xl italic font-bold text-gray-600 md:text-5xl">Comfort & Relaxation</h3>
+      <p class="py-5 text-sm text-gray-700 md:text-xl">All our rooms are equipped by default with the following
+        amenities:</p>
+      <div
+        class="grid grid-cols-2 px-2 mb-10 place-items-center md:items-center md:justify-center md:flex md:flex-wrap md:space-x-6">
+        <div class="flex items-center justify-center mb-1 space-x-1">
           <i class="text-teal-600 fa-solid fa-snowflake fa-xs"></i>
-          <p class="text-sm text-gray-700">Air conditioning</p>
+          <p class="text-sm text-gray-700 ">Air conditioning</p>
         </div>
-        <div class="flex items-center justify-center space-x-1">
-          <i class="text-teal-600 fa-regular fa-square fa-xs"></i>
-          <p class="text-sm text-gray-700">Cabinet Fridge</p>
-        </div>
-        <div class="flex items-center justify-center space-x-1">
+
+        <div class="flex items-center justify-center mb-1 space-x-1">
           <i class="text-teal-600 fa-solid fa-wifi fa-xs"></i>
-          <p class="text-sm text-gray-700">Wifi</p>
+          <p class="text-sm text-gray-700 ">Wifi</p>
         </div>
-        <div class="flex items-center justify-center space-x-1">
+        <div class="flex items-center justify-center mb-1 space-x-1">
           <i class="text-teal-600 fa-regular fa-square fa-xs"></i>
-          <p class="text-sm text-gray-700">Private bathrooms</p>
+          <p class="text-sm text-gray-700 ">Private bathrooms</p>
         </div>
-        <div class="flex items-center justify-center space-x-1">
+        <div class="flex items-center justify-center mb-2 space-x-1">
           <i class="text-teal-600 fa-solid fa-tv fa-xs"></i>
-          <p class="text-sm text-gray-700">Widescreen LCD</p>
+          <p class="text-sm text-gray-700 ">Widescreen LCD</p>
         </div>
       </div>
       <div
@@ -288,7 +293,7 @@
       </div>
     </div>
   </section>
-  <section id="tourism" class="mt-32">
+  <section id="tourism" class="mt-32 ">
     <div class="container w-full pt-32 pb-20 mx-auto text-center ">
       <p class="text-teal-700">TOURISM</p>
       <h3 class="pb-10 text-5xl italic font-bold text-gray-500">Popular Attractions</h3>

@@ -126,6 +126,8 @@ for (const icon of facilityNavIcons) {
 
     }else if (e.target.id === "2")
     {
+       facilityContainer.style.transition = 'all 4s ease-in-out'
+    
       console.log(e.target.id);
       facilityImage.src = "./img/facilities-parking.jpg"
       facilityNavIconIcon[1].classList.add('active')
@@ -185,6 +187,7 @@ for (const icon of facilityNavIcons) {
     {
       console.log(e.target.id);
       facilityImage.src = "./img/facilities-terrace-768x484.jpg"
+
       facilityNavIconIcon[4].classList.add('active')
       facilityNavIconIcon[0].classList.remove('active')
       facilityNavIconIcon[2].classList.remove('active')
@@ -201,9 +204,8 @@ for (const icon of facilityNavIcons) {
       facilityTextSpan.innerText = 'Book one of our room'
       facilityTextP2.innerText = 'SERVING SCHEDULE: 08:00 - 23:00'
     }
-     facilityContainer.style.transition = 'opacity 4s ease-in-out'
-     facilityContainer.style.opacity = '0'
-    facilityContainer.style.opacity = '1'
+     
+     
     
    
   });
@@ -280,6 +282,7 @@ $owlCarousel.on("resize.owl.carousel", () => {
 
 const menuBtn = document.querySelector('.hamburger-menu')
 const sideBar = document.querySelector('.side-bar')
+const closeBtnSidebar = document.querySelector('.close-side-bar')
 let toggle = false;
 menuBtn.addEventListener('click',() =>  {
   if (toggle === false) {
@@ -290,3 +293,8 @@ menuBtn.addEventListener('click',() =>  {
     toggle=false
   }
 });
+closeBtnSidebar.addEventListener('click', () => {
+sideBar.style.visibility = 'hidden';
+    toggle=false
+
+ });
