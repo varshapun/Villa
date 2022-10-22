@@ -10,13 +10,15 @@
 body {
   font-family: Proxima Nova, system-ui, sans-serif;
 }
-.logo-nav {
-}
+
+.logo-nav {}
+
 .logo-nav img {
   width: 50%;
   height: 50%;
   padding: 0;
 }
+
 .side-bar {
   background-color: #f4f4f4;
 }
@@ -27,12 +29,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 700px;
+  height: 890px;
 }
 
 #discover .slider-container {
   max-width: 1000px;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   background: #e6e6e6;
   margin: 2rem auto 0 auto;
   overflow: hidden;
@@ -270,10 +272,12 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
   #showcase {
     height: 350px;
     width: 100%;
   }
+
   #rooms .room-image {
     width: 90%;
     flex-basis: 33%;

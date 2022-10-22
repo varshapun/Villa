@@ -63,7 +63,30 @@ for (const discoverImg of discoverImages) {
       imageContainer.style.backgroundImage = 'url(./img/discover-image-5.jpg)'
     } else if (e.target.id === '6') {
       imageContainer.style.backgroundImage =
-        'url(./img/facilities-restaurant.jpg)'
+        'url(./img//discover-image-6.jpg)'
+    }else if (e.target.id === '7') {
+      imageContainer.style.backgroundImage =
+        'url(./img/discover-image-7.jpg)'
+    }
+    else if (e.target.id === '8') {
+      imageContainer.style.backgroundImage =
+        'url(./img/discover-image-8.jpg)'
+    }
+    else if (e.target.id === '9') {
+      imageContainer.style.backgroundImage =
+        'url(./img/discover-image-9.jpg)'
+    }
+    else if (e.target.id === '10') {
+      imageContainer.style.backgroundImage =
+        'url(./img/discover-image-10.jpg)'
+    }
+    else if (e.target.id === '11') {
+      imageContainer.style.backgroundImage =
+        'url(./img/discover-image-11.jpg)'
+    }
+    else if (e.target.id === '12') {
+      imageContainer.style.backgroundImage =
+        'url(./img/discover-image-12.jpg)'
     }
   })
 }
@@ -90,12 +113,12 @@ for (const icon of facilityNavIcons) {
       facilityNavIconIcon[1].classList.remove('active')
       facilityNavIconIcon[2].classList.remove('active')
       facilityNavIconIcon[3].classList.remove('active')
-      facilityNavIconIcon[4].classList.remove('active')
+     
       facilityNavIconP[0].classList.add('active')
       facilityNavIconP[1].classList.remove('active')
       facilityNavIconP[2].classList.remove('active')
       facilityNavIconP[3].classList.remove('active')
-      facilityNavIconP[4].classList.remove('active')
+     
       // text change
       facilityTextH2.innerText =
         'Crystal Clear Turquoise Waters And Warm Beaches'
@@ -103,41 +126,19 @@ for (const icon of facilityNavIcons) {
         'here are 2 beautiful sunny beaches near Villa’s location conveniently equipped with beach chairs, umbrellas, beach bar, showers and trained life guards for '
       facilityTextSpan.innerText = 'your safety.'
       facilityTextP2.innerText = 'SWIMMING SCHEDULE: 08:00 - 23:00'
-    } /* else if (e.target.id === '2') {
-      facilityContainer.style.transition = 'all 4s ease-in-out'
-
+    }  else if (e.target.id === '2') {
       console.log(e.target.id)
-      facilityImage.src = './img/facilities-parking.jpg'
+      facilityImage.src = './img/facilities-playground.jpg'
       facilityNavIconIcon[1].classList.add('active')
       facilityNavIconIcon[0].classList.remove('active')
       facilityNavIconIcon[2].classList.remove('active')
       facilityNavIconIcon[3].classList.remove('active')
-      facilityNavIconIcon[4].classList.remove('active')
+    
       facilityNavIconP[1].classList.add('active')
       facilityNavIconP[0].classList.remove('active')
       facilityNavIconP[2].classList.remove('active')
       facilityNavIconP[3].classList.remove('active')
-      facilityNavIconP[4].classList.remove('active')
-      // text change
-      facilityTextH2.innerText =
-        'Last Thing You Need To Worry About Is Your Car'
-      facilityNavIconP.innerText =
-        'Villa offers free parking for all its customers in a safe and easy to reach area. The designated place is guarded and supervised with surveillance cameras for your '
-      facilityTextSpan.innerText = 'peace of mind.'
-      facilityTextP2.innerText = 'PARKING SCHEDULE: NON-STOP'
-    }  */ else if (e.target.id === '3') {
-      console.log(e.target.id)
-      facilityImage.src = './img/facilities-playground.jpg'
-      facilityNavIconIcon[2].classList.add('active')
-      facilityNavIconIcon[0].classList.remove('active')
-      facilityNavIconIcon[1].classList.remove('active')
-      facilityNavIconIcon[3].classList.remove('active')
-      facilityNavIconIcon[4].classList.remove('active')
-      facilityNavIconP[2].classList.add('active')
-      facilityNavIconP[0].classList.remove('active')
-      facilityNavIconP[1].classList.remove('active')
-      facilityNavIconP[3].classList.remove('active')
-      facilityNavIconP[4].classList.remove('active')
+      
       // text change
       facilityTextH2.innerText =
         'Kids Never Felt Better While Having So Much Fun'
@@ -145,39 +146,39 @@ for (const icon of facilityNavIcons) {
         'Children have their own space to have fun and play games under adult supervision so you can enjoy a few moments of relaxation in your room or some extreme sports  '
       facilityTextSpan.innerText = 'on the beach.'
       facilityTextP2.innerText = 'PLAY SCHEDULE: 08:00 - 23:00'
-    } else if (e.target.id === '4') {
+    } else if (e.target.id === '3') {
       console.log(e.target.id)
       facilityImage.src = './img/discover-image-6.jpg'
-      facilityNavIconIcon[3].classList.add('active')
+      facilityNavIconIcon[2].classList.add('active')
       facilityNavIconIcon[0].classList.remove('active')
-      facilityNavIconIcon[2].classList.remove('active')
+      facilityNavIconIcon[3].classList.remove('active')
       facilityNavIconIcon[1].classList.remove('active')
-      facilityNavIconIcon[4].classList.remove('active')
-      facilityNavIconP[3].classList.add('active')
+
+      facilityNavIconP[2].classList.add('active')
       facilityNavIconP[0].classList.remove('active')
-      facilityNavIconP[2].classList.remove('active')
+      facilityNavIconP[3].classList.remove('active')
       facilityNavIconP[1].classList.remove('active')
-      facilityNavIconP[4].classList.remove('active')
+     
       // text change
       facilityTextH2.innerText = 'Delicious Local Food And International Dishes'
       facilityNavIconP.innerText =
         'We serve delicious food from the local cuisine made with natural ingredients from local farms and markets. Villa is also vegetarian friendly so come on,  '
       facilityTextSpan.innerText = 'Book one of our room'
       facilityTextP2.innerText = 'SERVING SCHEDULE: 08:00 - 23:00'
-    } else if (e.target.id === '5') {
+    } else if (e.target.id === '4') {
       console.log(e.target.id)
       facilityImage.src = './img/gir-safari.jpg'
 
-      facilityNavIconIcon[4].classList.add('active')
+      facilityNavIconIcon[3].classList.add('active')
       facilityNavIconIcon[0].classList.remove('active')
       facilityNavIconIcon[2].classList.remove('active')
       facilityNavIconIcon[1].classList.remove('active')
-      facilityNavIconIcon[3].classList.remove('active')
-      facilityNavIconP[4].classList.add('active')
+      
+      facilityNavIconP[3].classList.add('active')
       facilityNavIconP[0].classList.remove('active')
       facilityNavIconP[2].classList.remove('active')
       facilityNavIconP[1].classList.remove('active')
-      facilityNavIconP[3].classList.remove('active')
+      
       // text change
       facilityTextH2.innerText =
         'Great Place For Relaxing Summer Mornings And Evenings'
