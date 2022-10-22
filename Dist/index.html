@@ -43,13 +43,13 @@
   <body class="text-lg subpixel-antialiased">
     <!-- Navbar -->
     <nav
-      class="z-10 w-full h-24 text-black flex items-center bg-transparent nav-bar"
+      class="z-10 flex items-center w-full h-24 text-black bg-transparent nav-bar"
     >
       <div class="container flex items-center justify-around mx-auto">
-        <!-- <h2 class="text-5xl font-extrabold brand-logo text-black">
+        <!-- <h2 class="text-5xl font-extrabold text-black brand-logo">
           Shri Shiv Villa
         </h2> -->
-        <div class="basis-1/2 md:basis-1/5 logo-nav p-0 md:pt-4 m-0">
+        <div class="p-0 m-0 basis-1/2 md:basis-1/5 logo-nav md:pt-4">
           <img
             src="img/logo-main.PNG"
             alt=""
@@ -164,14 +164,21 @@
     </div>
 
     <!-- Showcase -->
-    <section id="showcase" class="w-full bg-contain h-auto md:h-1/3">
+    <section id="showcase" class="relative w-full h-auto bg-contain md:h-1/3">
+      <div
+        class="absolute top-0 w-full h-full bg-black -z-0 overlay opacity-90"
+      ></div>
       <div
         class="container flex flex-col items-center justify-center h-full mx-auto space-y-6 text-center"
+        style="z-index: 5"
       >
-        <h2 class="py-2 mb-0 italic font-bold text-black text-3Xl md:text-7xl">
+        <h2
+          class="py-2 mb-0 italic font-bold text-white text-3Xl md:text-7xl"
+          style="z-index: 5"
+        >
           Amazing Experience
         </h2>
-        <p class="text-base text-gray-600 md:text-lg">
+        <p class="text-base text-white md:text-lg" style="z-index: 5">
           Villa is one of the most beautiful and relaxing places at the
           Mediterranean sea
         </p>
@@ -277,7 +284,67 @@
                 <img
                   class="overflow-hidden discover-image hover:scale-105"
                   id="6"
-                  src="./img/facilities-restaurant.jpg "
+                  src="./img/discover-image-6.jpg "
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="card">
+                <img
+                  class="overflow-hidden discover-image hover:scale-105"
+                  id="6"
+                  src="./img/discover-image-7.jpg "
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="card">
+                <img
+                  class="overflow-hidden discover-image hover:scale-105"
+                  id="6"
+                  src="./img/discover-image-8.jpg "
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="card">
+                <img
+                  class="overflow-hidden discover-image hover:scale-105"
+                  id="6"
+                  src="./img/discover-image-9.jpg "
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="card">
+                <img
+                  class="overflow-hidden discover-image hover:scale-105"
+                  id="6"
+                  src="./img/discover-image-10.jpg "
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="card">
+                <img
+                  class="overflow-hidden discover-image hover:scale-105"
+                  id="6"
+                  src="./img/discover-image-11.jpg "
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="card">
+                <img
+                  class="overflow-hidden discover-image hover:scale-105"
+                  id="6"
+                  src="./img/discover-image-12.jpg "
                   alt=""
                 />
               </div>
@@ -315,21 +382,10 @@
               class="text-xs md:text-base active facility-nav-icon facility-nav-icon-p"
               id="1"
             >
-              Beach
+              Pool
             </p>
           </div>
-          <div class="cursor-pointer parking facility-nav-icon" id="2">
-            <i
-              class="text-gray-500 fa-solid fa-car md:fa-xl facility-nav-icon facility-nav-icon-icon"
-              id="2"
-            ></i>
-            <p
-              class="text-xs md:text-base facility-nav-icon facility-nav-icon-p"
-              id="2"
-            >
-              Parking
-            </p>
-          </div>
+
           <div class="cursor-pointer playground facility-nav-icon" id="3">
             <i
               class="text-gray-500 fa-regular fa-futbol md:fa-xl facility-nav-icon facility-nav-icon-icon"
@@ -356,14 +412,14 @@
           </div>
           <div class="cursor-pointer terrace facility-nav-icon" id="5">
             <i
-              class="text-gray-500 fa-solid fa-martini-glass md:fa-xl facility-nav-icon facility-nav-icon-icon"
+              class="text-gray-500 fa-sharp fa-solid fa-car md:fa-xl facility-nav-icon facility-nav-icon-icon"
               id="5"
             ></i>
             <p
               class="text-xs md:text-base facility-nav-icon facility-nav-icon-p"
               id="5"
             >
-              Terrace
+              Safari
             </p>
           </div>
         </div>
@@ -372,7 +428,7 @@
         >
           <div class="w-11/12 lg:w-1/2 lg:mr-5">
             <img
-              src="img/facilities-beach.jpg"
+              src="img/discover-image-1.jpg"
               alt=""
               class="w-full transition-all duration-1000 ease-in facility-image"
             />
@@ -435,7 +491,7 @@
           >
             <img src="./img/room-3-image-details-1024x838.jpg" alt="" />
             <h3 class="text-xl italic font-bold text-gray-500 lg:text-2xl bold">
-              Presidential Room
+              Suite Room
             </h3>
             <p class="text-sm text-gray-500">
               High class luxury for the most demanding tourists. Features
@@ -452,7 +508,7 @@
           >
             <img src="./img/room-2-image-details-1024x838.jpg" alt="" />
             <h3 class="text-xl italic font-bold text-gray-500 lg:text-2xl bold">
-              Panormaic Room
+              Premier Room
             </h3>
             <p class="text-sm text-gray-500">
               Get the best view to the beautiful sea and splendid surroundings
@@ -469,7 +525,7 @@
           >
             <img src="./img/room-1-image-details-1024x838.jpg" alt="" />
             <h3 class="text-xl italic font-bold text-gray-500 lg:text-2xl bold">
-              Balcony Room
+              Delux
             </h3>
             <p class="text-sm text-gray-500">
               Our entry level room gives you access to all amenities at a really
@@ -487,11 +543,11 @@
     <section id="tourism" class="mt-32">
       <div class="container w-full pt-32 pb-20 mx-auto text-center">
         <p class="text-teal-700">TOURISM</p>
-        <h3 class="pb-10 text-2xl md:text-5xl italic font-bold text-gray-500">
+        <h3 class="pb-10 text-2xl italic font-bold text-gray-500 md:text-5xl">
           Popular Attractions
         </h3>
         <div
-          class="flex flex-col items-center justify-center w-11/12 space-y-5 md:space-y-0 mx-auto md:space-x-10 md:flex-row md:w-4/5"
+          class="flex flex-col items-center justify-center w-11/12 mx-auto space-y-5 md:space-y-0 md:space-x-10 md:flex-row md:w-4/5"
         >
           <div class="space-y-3 text-left basis-1/2">
             <img src="img/discover-image-4.jpg" alt="" />
@@ -691,7 +747,7 @@
     <section id="contact" class="flex justify-center py-8">
       <div class="container text-center">
         <p class="mb-2 font-semibold text-teal-700">CONTACT</p>
-        <h3 class="mb-2 text-2xl md:text-5xl italic font-bold text-gray-600">
+        <h3 class="mb-2 text-2xl italic font-bold text-gray-600 md:text-5xl">
           Location Information
         </h3>
         <p class="mb-4 text-sm text-gray-500">
@@ -716,7 +772,7 @@
           <div class="mapouter">
             <div class="gmap_canvas">
               <iframe
-                class="gmap_iframe w-10/12 mx-auto md:w-2/3"
+                class="w-10/12 mx-auto gmap_iframe md:w-2/3"
                 width="100%"
                 frameborder="0"
                 scrolling="no"
@@ -759,14 +815,14 @@
         class="container flex flex-col items-center justify-center space-y-5 md:flex-row md:justify-around md:space-y-0"
       >
         <div class="text-center basis-1/3 md:text-left">
-          <h3 class="mb-3 text-xl md:text-2xl italic font-bold">About Villa</h3>
+          <h3 class="mb-3 text-xl italic font-bold md:text-2xl">About Villa</h3>
           <p class="text-sm md:text-base">
             Villa is a unique bed & breakfast tourism facility situated on the
             magnificent Mediterranean sea shores. Come and visit us!
           </p>
         </div>
         <div class="text-center basis-1/3 md:text-left">
-          <h3 class="mb-3 text-xl md:text-2xl italic font-bold">
+          <h3 class="mb-3 text-xl italic font-bold md:text-2xl">
             Follow Us On
           </h3>
           <div

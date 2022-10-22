@@ -85,7 +85,7 @@ const facilityContainer = document.querySelector('.facility-image')
 for (const icon of facilityNavIcons) {
   icon.addEventListener('click', function click(e) {
     if (e.target.id === '1') {
-      facilityImage.src = './img/facilities-beach.jpg'
+      facilityImage.src = './img/discover-image-1.jpg'
       facilityNavIconIcon[0].classList.add('active')
       facilityNavIconIcon[1].classList.remove('active')
       facilityNavIconIcon[2].classList.remove('active')
@@ -103,7 +103,7 @@ for (const icon of facilityNavIcons) {
         'here are 2 beautiful sunny beaches near Villa’s location conveniently equipped with beach chairs, umbrellas, beach bar, showers and trained life guards for '
       facilityTextSpan.innerText = 'your safety.'
       facilityTextP2.innerText = 'SWIMMING SCHEDULE: 08:00 - 23:00'
-    } else if (e.target.id === '2') {
+    } /* else if (e.target.id === '2') {
       facilityContainer.style.transition = 'all 4s ease-in-out'
 
       console.log(e.target.id)
@@ -125,7 +125,7 @@ for (const icon of facilityNavIcons) {
         'Villa offers free parking for all its customers in a safe and easy to reach area. The designated place is guarded and supervised with surveillance cameras for your '
       facilityTextSpan.innerText = 'peace of mind.'
       facilityTextP2.innerText = 'PARKING SCHEDULE: NON-STOP'
-    } else if (e.target.id === '3') {
+    }  */ else if (e.target.id === '3') {
       console.log(e.target.id)
       facilityImage.src = './img/facilities-playground.jpg'
       facilityNavIconIcon[2].classList.add('active')
@@ -147,7 +147,7 @@ for (const icon of facilityNavIcons) {
       facilityTextP2.innerText = 'PLAY SCHEDULE: 08:00 - 23:00'
     } else if (e.target.id === '4') {
       console.log(e.target.id)
-      facilityImage.src = './img/facilities-restaurant-.jpg'
+      facilityImage.src = './img/discover-image-6.jpg'
       facilityNavIconIcon[3].classList.add('active')
       facilityNavIconIcon[0].classList.remove('active')
       facilityNavIconIcon[2].classList.remove('active')
@@ -166,7 +166,7 @@ for (const icon of facilityNavIcons) {
       facilityTextP2.innerText = 'SERVING SCHEDULE: 08:00 - 23:00'
     } else if (e.target.id === '5') {
       console.log(e.target.id)
-      facilityImage.src = './img/facilities-terrace-768x484.jpg'
+      facilityImage.src = './img/gir-safari.jpg'
 
       facilityNavIconIcon[4].classList.add('active')
       facilityNavIconIcon[0].classList.remove('active')
