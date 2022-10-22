@@ -662,11 +662,6 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -927,9 +922,9 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-teal-800 {
+.bg-orange-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(17 94 89 / var(--tw-bg-opacity));
+  background-color: rgb(154 52 18 / var(--tw-bg-opacity));
 }
 
 .bg-gray-700 {
@@ -1127,9 +1122,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-teal-800 {
+.text-orange-800 {
   --tw-text-opacity: 1;
-  color: rgb(17 94 89 / var(--tw-text-opacity));
+  color: rgb(154 52 18 / var(--tw-text-opacity));
 }
 
 .text-gray-800 {
@@ -1140,6 +1135,11 @@ video {
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-orange-900 {
+  --tw-text-opacity: 1;
+  color: rgb(124 45 18 / var(--tw-text-opacity));
 }
 
 .text-gray-600 {
@@ -1348,7 +1348,7 @@ body {
 }
 
 #facilities .active {
-  color: rgb(15 118 110);
+  color: #991b1b;
 }
 
 #facilities .facility-nav-icon {
@@ -1541,6 +1541,10 @@ body {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:w-4\/5 {
