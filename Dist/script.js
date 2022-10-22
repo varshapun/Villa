@@ -121,11 +121,11 @@ for (const icon of facilityNavIcons) {
      
       // text change
       facilityTextH2.innerText =
-        'Crystal Clear Turquoise Waters And Warm Beaches'
+        ' Crystal Clear Waters And Cool Atmosphere'
       facilityNavIconP.innerText =
-        'here are 2 beautiful sunny beaches near Villa’s location conveniently equipped with beach chairs, umbrellas, beach bar, showers and trained life guards for '
-      facilityTextSpan.innerText = 'your safety.'
-      facilityTextP2.innerText = 'SWIMMING SCHEDULE: 08:00 - 23:00'
+        'You can enjoy and chill with your family. We maintain all the hygiene standards for pool area and its water. '
+
+      facilityTextP2.innerText = ' SWIMMING SCHEDULE: 07:00 AM - 07:00 PM'
     }  else if (e.target.id === '2') {
       console.log(e.target.id)
       facilityImage.src = './img/facilities-playground.jpg'
@@ -143,9 +143,9 @@ for (const icon of facilityNavIcons) {
       facilityTextH2.innerText =
         'Kids Never Felt Better While Having So Much Fun'
       facilityNavIconP.innerText =
-        'Children have their own space to have fun and play games under adult supervision so you can enjoy a few moments of relaxation in your room or some extreme sports  '
-      facilityTextSpan.innerText = 'on the beach.'
-      facilityTextP2.innerText = 'PLAY SCHEDULE: 08:00 - 23:00'
+        'Children have their own space to have fun and play games, so you can enjoy a few moments of relaxation in your room.  '
+      
+      facilityTextP2.innerText = ''
     } else if (e.target.id === '3') {
       console.log(e.target.id)
       facilityImage.src = './img/discover-image-6.jpg'
@@ -160,10 +160,10 @@ for (const icon of facilityNavIcons) {
       facilityNavIconP[1].classList.remove('active')
      
       // text change
-      facilityTextH2.innerText = 'Delicious Local Food And International Dishes'
+      facilityTextH2.innerText = 'Delicious Local Food And International Dishes @ "Phulka" '
       facilityNavIconP.innerText =
-        'We serve delicious food from the local cuisine made with natural ingredients from local farms and markets. Villa is also vegetarian friendly so come on,  '
-      facilityTextSpan.innerText = 'Book one of our room'
+        'We serve delicious food from the local cuisine made with natural ingredients from local farms and markets. Villa is also vegetarian friendly so come on.  '
+      facilityTextSpan.innerText = ''
       facilityTextP2.innerText = 'SERVING SCHEDULE: 08:00 - 23:00'
     } else if (e.target.id === '4') {
       console.log(e.target.id)

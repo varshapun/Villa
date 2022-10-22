@@ -779,6 +779,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1230,7 +1234,7 @@ body {
 }
 
 #showcase {
-  background-image: url('../img/showcase.jpg');
+  background-image: url('../img/discover-image-8.jpg');
   /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: center;
