@@ -102,7 +102,7 @@ const facilityNavIconP = document.querySelectorAll('.facility-nav-icon-p')
 const facilityTextH2 = document.querySelector('.facility-text-h2')
 const facilityTextP = document.querySelector('.facility-text-p')
 const facilityTextP2 = document.querySelector('.facility-text-p2')
-const facilityTextSpan = document.querySelector('.facility-text-span')
+
 const facilityImage = document.querySelector('.facility-image')
 const facilityContainer = document.querySelector('.facility-image')
 for (const icon of facilityNavIcons) {
@@ -122,9 +122,10 @@ for (const icon of facilityNavIcons) {
       // text change
       facilityTextH2.innerText =
         ' Crystal Clear Waters And Cool Atmosphere'
-      facilityNavIconP.innerText =
+      facilityTextP.innerText =
         'You can enjoy and chill with your family. We maintain all the hygiene standards for pool area and its water. '
-
+      
+ facilityTextP2.style.visibility = 'visible'
       facilityTextP2.innerText = ' SWIMMING SCHEDULE: 07:00 AM - 07:00 PM'
     }  else if (e.target.id === '2') {
       console.log(e.target.id)
@@ -142,10 +143,10 @@ for (const icon of facilityNavIcons) {
       // text change
       facilityTextH2.innerText =
         'Kids Never Felt Better While Having So Much Fun'
-      facilityNavIconP.innerText =
+      facilityTextP.innerText =
         'Children have their own space to have fun and play games, so you can enjoy a few moments of relaxation in your room.  '
       
-      facilityTextP2.innerText = ''
+      facilityTextP2.style.visibility = 'hidden'
     } else if (e.target.id === '3') {
       console.log(e.target.id)
       facilityImage.src = './img/discover-image-6.jpg'
@@ -160,11 +161,13 @@ for (const icon of facilityNavIcons) {
       facilityNavIconP[1].classList.remove('active')
      
       // text change
-      facilityTextH2.innerText = 'Delicious Local Food And International Dishes @ "Phulka" '
-      facilityNavIconP.innerText =
-        'We serve delicious food from the local cuisine made with natural ingredients from local farms and markets. Villa is also vegetarian friendly so come on.  '
-      facilityTextSpan.innerText = ''
-      facilityTextP2.innerText = 'SERVING SCHEDULE: 08:00 - 23:00'
+      facilityTextH2.innerText = 'Delicious Local Food And  Dishes @ "Phulka" ';
+      facilityTextP.innerHtml =
+        'We serve delicious food from the local cuisine made with natural ingredients from local farms and markets. Villa is also vegetarian friendly so come on.  ';
+ facilityTextP2.style.visibility = 'visible'
+      facilityTextP2.innerText = `BREAKFAST SCHEDULE: 07:30 AM - 10:00 AM
+                                  LUNCH SCHEDULE    : 12:30 PM - 03:00 PM
+                                  DINNER SCHEDULE   : 07:30 PM - 10:00 PM`
     } else if (e.target.id === '4') {
       console.log(e.target.id)
       facilityImage.src = './img/gir-safari.jpg'
@@ -182,10 +185,10 @@ for (const icon of facilityNavIcons) {
       // text change
       facilityTextH2.innerText =
         'Great Place For Relaxing Summer Mornings And Evenings'
-      facilityNavIconP.innerText =
+      facilityTextP.innerText =
         'We serve delicious food from the local cuisine made with natural ingredients from local farms and markets. Villa is also vegetarian friendly so come on,  '
-      facilityTextSpan.innerText = 'Book one of our room'
-      facilityTextP2.innerText = 'SERVING SCHEDULE: 08:00 - 23:00'
+  
+     facilityTextP2.style.visibility = 'hidden'
     }
   })
 }
