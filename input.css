@@ -11,22 +11,30 @@ body {
   font-family: Proxima Nova, system-ui, sans-serif;
 }
 
+.logo-nav {}
+
+.logo-nav img {
+  width: 50%;
+  height: 50%;
+  padding: 0;
+}
+
 .side-bar {
   background-color: #f4f4f4;
 }
 
 #showcase {
   background-image: url('../img/showcase.jpg');
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 800px;
+  height: 890px;
 }
 
 #discover .slider-container {
   max-width: 1000px;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   background: #e6e6e6;
   margin: 2rem auto 0 auto;
   overflow: hidden;
@@ -47,7 +55,7 @@ body {
 #discover .slider-item {
   background: #fff;
 
-  padding: 1.5rem .75rem;
+  padding: 1.5rem 0.75rem;
   position: relative;
 }
 
@@ -79,35 +87,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 #discover .prev,
 #discover .next {
   position: absolute;
 
-
   top: 50%;
 
   z-index: 4;
   color: rgb(231 229 228);
-
 }
 
 #discover .next {
   right: 1%;
-
 }
 
 #discover .prev {
   left: 1%;
-
 }
 
 #discover .image-container {
   height: 75%;
   width: 75%;
-  margin-top: 60PX;
+  margin-top: 60px;
   opacity: 1;
   z-index: 20;
 }
@@ -170,15 +173,12 @@ body {
   background-position: center;
 }
 
-
 .static {
   position: static;
 }
 
 .owl-carousel .owl-slide {
   position: relative;
-
-
 }
 
 .owl-carousel .owl-slide-animated {
@@ -238,8 +238,7 @@ body {
   background-color: #f4f4f4;
 }
 
-@media(min-width:1024px) {
-
+@media (min-width: 1024px) {
   .nav-bar a {
     font-size: 16px;
   }
@@ -256,8 +255,6 @@ body {
     width: 100%;
   }
 
-
-
   #rooms .room-image {
     width: 33.33%;
   }
@@ -269,11 +266,16 @@ body {
   }
 }
 
-@media(max-width:800px) {
+@media (max-width: 800px) {
   #rooms .room-details {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+  }
+
+  #showcase {
+    height: 350px;
+    width: 100%;
   }
 
   #rooms .room-image {
@@ -286,8 +288,5 @@ body {
   #rooms .room-image img {
     width: 100%;
     margin: auto;
-
   }
-
-
 }
