@@ -218,7 +218,7 @@ for (const icon of facilityNavIcons) {
 // review slide
 const $owlCarousel = $('.owl-carousel').owlCarousel({
   items: 1,
-  loop: true,
+ 
   nav: false,
 })
 $owlCarousel.on('changed.owl.carousel', (e) => {
