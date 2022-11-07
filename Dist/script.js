@@ -38,20 +38,7 @@ const slider = tns({
   },
 })
 
-const slider1 = tns({
-  container: '.my-slider1',
-  loop: true,
-  items: 1,
-  slideBy: 'page',
-  nav: false,
-  autoplay: true,
-  speed: 400,
-  autoplayButtonOutput: false,
-  mouseDrag: true,
-  lazyload: true,
-  controlsContainer: '#customize-controls',
- 
-})
+
 // Image slider open
 const imageContainer = document.querySelector('.image-container')
 const discoverImages = document.querySelectorAll('.discover-image')
