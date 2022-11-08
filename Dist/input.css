@@ -10,7 +10,171 @@
 body {
   font-family: Proxima Nova, system-ui, sans-serif;
 }
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.prev1, .next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev1{
+  left: 0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev1:hover, .next1:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slideshow-container2 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev2{
+  left: 0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slideshow-container3 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+ 
+}
+#rooms img{
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+}
+/* Hide the images by default */
+.mySlides3 {
+  display: none;
+}
+.prev3, .next3 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next3 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev3{
+  left: 0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev3:hover, .next3:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.slideshow-container4 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+ 
+}
+
+/* Hide the images by default */
+.mySlides4 {
+  display: none;
+}
+.prev4, .next4 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next4 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev4{
+  left: 0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev4:hover, .next4:hover {
+  background-color: rgba(0,0,0,0.8);
+}
 .logo-nav {}
 
 .logo-nav img {
@@ -127,7 +291,7 @@ body {
 #facilities {
   height: 850px;
   width: 100%;
-  background-image: url('../img/fac.jpeg');
+  background-image: url('./img/discover-image-3.jpg');
 
   background-position: center;
   background-size: cover;
