@@ -53,8 +53,8 @@
             class="h-10 text-lg text-black lg:text-2xl nav-links hover:text-cyan-800 hover:border-b-2 border-cyan-800">Rooms</a>
         </li>
         <li>
-          <a href="https://live.ipms247.com/booking/book-rooms-shrishivvilla" target="_blank"
-            class="h-10 text-lg text-black border-teal-700 lg:text-2xl nav-links hover:text-teal-700 hover:border-b-2">Bookings</a>
+          <a
+            class="bookNow h-10 text-lg text-black border-teal-700 lg:text-2xl nav-links hover:text-teal-700 hover:border-b-2">Bookings</a>
         </li>
         <li>
           <a href="#tourism"
@@ -93,8 +93,8 @@
           class="h-10 text-lg font-bold text-orange-700 border-black lg:text-2xl nav-links hover:text-black hover:border-b-2">Rooms</a>
       </li>
       <li>
-        <a href="https://live.ipms247.com/booking/book-rooms-shrishivvilla" target="_blank"
-          class="h-10 text-lg font-bold text-orange-700 border-black lg:text-2xl nav-links hover:text-black hover:border-b-2">Bookings</a>
+        <a 
+          class="bookNow h-10 text-lg font-bold text-orange-700 border-black lg:text-2xl nav-links hover:text-black hover:border-b-2">Bookings</a>
       </li>
       <li>
         <a href="#tourism"
@@ -495,7 +495,7 @@
 
         </div>
       </div>
-      <a onclick="displayDialog" target="_blank" class="bookNow">
+      <a   class="bookNow">
         <button
           class="w-1/2 p-2 px-10 my-2 mt-20 transition-all duration-100 bg-transparent border-2 border-gray-500 hover:bg-gray-500 hover:text-white">
           Book Now
@@ -505,7 +505,7 @@
 
     <!-- message -->
 
-    <div class="relative hidden dialogBookNow z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="z-50 relative hidden dialogBookNow " aria-labelledby="modal-title" role="dialog" aria-modal="true">
       <!--
         Background backdrop, show/hide based on modal state.
     
@@ -560,7 +560,7 @@
               </div>
             </div>
             <div class="mt-5 sm:mt-6 w-full flex justify-center items-center ">
-              <button type="button" onclick="hideDialog" class="okDialog w-full rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Ok</button>
+              <button type="button"  class="okDialog w-full rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Ok</button>
   
             </div>
           </div>
