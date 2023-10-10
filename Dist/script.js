@@ -103,6 +103,17 @@ const facilityNavIconP = document.querySelectorAll('.facility-nav-icon-p')
 const facilityTextH2 = document.querySelector('.facility-text-h2')
 const facilityTextP = document.querySelector('.facility-text-p')
 const facilityTextP2 = document.querySelector('.facility-text-p2')
+const dialogBookNow = document.querySelector('.dialogBookNow')
+const bookNow = document.querySelector('.bookNow')
+const okDialog = document.querySelector('.okDialog')
+
+bookNow.addEventListener('click', function click(e) {
+  dialogBookNow.style.display = 'block'
+})
+
+okDialog.addEventListener('click', function click(e) {
+  dialogBookNow.style.display = 'none'
+})
 
 const facilityImage = document.querySelector('.facility-image')
 const facilityContainer = document.querySelector('.facility-image')
