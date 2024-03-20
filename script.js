@@ -38,6 +38,7 @@ const slider = tns({
   },
 })
 
+
 // Image slider open
 const imageContainer = document.querySelector('.image-container')
 const discoverImages = document.querySelectorAll('.discover-image')
@@ -102,7 +103,22 @@ const facilityNavIconP = document.querySelectorAll('.facility-nav-icon-p')
 const facilityTextH2 = document.querySelector('.facility-text-h2')
 const facilityTextP = document.querySelector('.facility-text-p')
 const facilityTextP2 = document.querySelector('.facility-text-p2')
-const facilityTextSpan = document.querySelector('.facility-text-span')
+const dialogBookNow = document.querySelector('.dialogBookNow')
+const bookNow = document.querySelectorAll('.bookNow')
+const okDialog = document.querySelector('.okDialog')
+
+for (const booking of bookNow) {
+  booking.addEventListener('click', function click(e) {
+    dialogBookNow.style.display = 'block'
+  })
+  }
+
+
+
+okDialog.addEventListener('click', function click(e) {
+  dialogBookNow.style.display = 'none'
+})
+
 const facilityImage = document.querySelector('.facility-image')
 const facilityContainer = document.querySelector('.facility-image')
 for (const icon of facilityNavIcons) {
@@ -121,11 +137,12 @@ for (const icon of facilityNavIcons) {
      
       // text change
       facilityTextH2.innerText =
-        'Crystal Clear Turquoise Waters And Warm Beaches'
-      facilityNavIconP.innerText =
-        'here are 2 beautiful sunny beaches near Villa’s location conveniently equipped with beach chairs, umbrellas, beach bar, showers and trained life guards for '
-      facilityTextSpan.innerText = 'your safety.'
-      facilityTextP2.innerText = 'SWIMMING SCHEDULE: 08:00 - 23:00'
+        ' Crystal Clear Waters And Cool Atmosphere'
+      facilityTextP.innerText =
+        'You can enjoy and chill with your family. We maintain all the hygiene standards for pool area and its water. '
+      
+ facilityTextP2.style.visibility = 'visible'
+      facilityTextP2.innerText = ' SWIMMING SCHEDULE: 07:00 AM - 07:00 PM'
     }  else if (e.target.id === '2') {
       console.log(e.target.id)
       facilityImage.src = './img/facilities-playground.jpg'
@@ -142,10 +159,10 @@ for (const icon of facilityNavIcons) {
       // text change
       facilityTextH2.innerText =
         'Kids Never Felt Better While Having So Much Fun'
-      facilityNavIconP.innerText =
-        'Children have their own space to have fun and play games under adult supervision so you can enjoy a few moments of relaxation in your room or some extreme sports  '
-      facilityTextSpan.innerText = 'on the beach.'
-      facilityTextP2.innerText = 'PLAY SCHEDULE: 08:00 - 23:00'
+      facilityTextP.innerText =
+        'Children have their own space to have fun and play games, so you can enjoy a few moments of relaxation in your room.  '
+      
+      facilityTextP2.style.visibility = 'hidden'
     } else if (e.target.id === '3') {
       console.log(e.target.id)
       facilityImage.src = './img/discover-image-6.jpg'
@@ -160,11 +177,13 @@ for (const icon of facilityNavIcons) {
       facilityNavIconP[1].classList.remove('active')
      
       // text change
-      facilityTextH2.innerText = 'Delicious Local Food And International Dishes'
-      facilityNavIconP.innerText =
-        'We serve delicious food from the local cuisine made with natural ingredients from local farms and markets. Villa is also vegetarian friendly so come on,  '
-      facilityTextSpan.innerText = 'Book one of our room'
-      facilityTextP2.innerText = 'SERVING SCHEDULE: 08:00 - 23:00'
+      facilityTextH2.innerText = 'Delicious Local Food And  Dishes @ "Phulka" ';
+      facilityTextP.innerHtml =
+        'We serve delicious food from the local cuisine made with natural ingredients from local farms and markets. Villa is also vegetarian friendly so come on.  ';
+ facilityTextP2.style.visibility = 'visible'
+      facilityTextP2.innerText = `BREAKFAST SCHEDULE: 07:30 AM - 10:00 AM
+                                  LUNCH SCHEDULE    : 12:30 PM - 03:00 PM
+                                  DINNER SCHEDULE   : 07:30 PM - 10:00 PM`
     } else if (e.target.id === '4') {
       console.log(e.target.id)
       facilityImage.src = './img/gir-safari.jpg'
@@ -182,10 +201,10 @@ for (const icon of facilityNavIcons) {
       // text change
       facilityTextH2.innerText =
         'Great Place For Relaxing Summer Mornings And Evenings'
-      facilityNavIconP.innerText =
+      facilityTextP.innerText =
         'We serve delicious food from the local cuisine made with natural ingredients from local farms and markets. Villa is also vegetarian friendly so come on,  '
-      facilityTextSpan.innerText = 'Book one of our room'
-      facilityTextP2.innerText = 'SERVING SCHEDULE: 08:00 - 23:00'
+  
+     facilityTextP2.style.visibility = 'hidden'
     }
   })
 }
@@ -214,7 +233,7 @@ for (const icon of facilityNavIcons) {
 // review slide
 const $owlCarousel = $('.owl-carousel').owlCarousel({
   items: 1,
-  loop: true,
+ 
   nav: false,
 })
 $owlCarousel.on('changed.owl.carousel', (e) => {
@@ -274,3 +293,110 @@ closeBtnSidebar.addEventListener('click', () => {
   sideBar.style.visibility = 'hidden'
   toggle = false
 })
+
+// suite-room
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+
+}
+
+// sup-room
+let slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+// Next/previous controls
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+// Thumbnail image controls
+function currentSlide2(n) {
+  showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides2");
+
+  if (n > slides.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex2-1].style.display = "block";
+ 
+}
+// delux-room
+let slideIndex3 = 1;
+showSlides3(slideIndex3);
+
+// Next/previous controls
+function plusSlides3(n) {
+  showSlides3(slideIndex3 += n);
+}
+
+// Thumbnail image controls
+function currentSlide3(n) {
+  showSlides3(slideIndex3 = n);
+}
+
+function showSlides3(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides3");
+
+  if (n > slides.length) {slideIndex3 = 1}
+  if (n < 1) {slideIndex3 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex3-1].style.display = "block";
+ 
+}
+
+// family-room
+let slideIndex4 = 1;
+showSlides4(slideIndex4);
+
+// Next/previous controls
+function plusSlides4(n) {
+  showSlides4(slideIndex4 += n);
+}
+
+// Thumbnail image controls
+function currentSlide4(n) {
+  showSlides4(slideIndex4 = n);
+}
+
+function showSlides4(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides4");
+
+  if (n > slides.length) {slideIndex4 = 1}
+  if (n < 1) {slideIndex4 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex4-1].style.display = "block";
+ 
+}
